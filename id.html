@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+.btn{ background-color:navy;
+color:white;
+padding:15px;
+border-radius:5px;
+font-size:20px;
+}
+a:link{color:red;}
+a:visited{color:blue;}
+a:hover{color:black;}
+ul{font-size:20;}
+</style>
+<body bgcolor=lightgrey>
+<form name="login">
+<br>
+<h1><center><u>SIGN IN</u></center></h1>
+<br>
+<fieldset>
+<br>
+<br>
+<font size=5>First Name:<br>
+<input type="text" name="userid"><br>
+Password:<br>
+<input type="password" name="paswrd"></font><br><br>
+<ul>
+<li>The eligibility for joining Indian Air Force is finishing class 12 with Physics, Chemistry and Mathematics.</li>
+<li>Candidates have to be unmarried Indian citizens (male).</li>
+<li>Normal vision is required but glasses up to plus or minus 2.5 may be allowed,</li>
+<li>Admission is through an entrance followed by a screening test and a main written examination.</li>
+<li>After clearing the test, there is an interview and a medical test.</li>
+<br>
+<br>
+<input type=checkbox>i read all the terms and conditions</checkbox>&nbsp;&nbsp;
+<br>
+<center><input type="button" onclick="check(this.form)" value="Login" class="btn" ></center><br>
+</form>
+<br>
+<br>
+<script language="javascript">
+function check(form)
+{
+if(form.userid.value=="Shivangi"&&form.paswrd.value=="12345")
+{
+window.open("submit.html")
+}
+else
+{
+alert("Incorrect Password or Name")
+}
+}
+</script>
+</body>
+</html>
